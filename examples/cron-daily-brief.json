@@ -1,0 +1,10 @@
+{
+  "name": "daily-morning-brief",
+  "schedule": "0 8 * * *",
+  "timezone": "America/New_York",
+  "enabled": true,
+  "prompt": "Send me my morning brief. Include: 1) Current weather and forecast for [YOUR CITY], 2) Top 5 news headlines in [YOUR TOPICS], 3) My calendar events for today, 4) Priority tasks from my to-do list, 5) One motivational or interesting fact. Keep it concise and actionable. Deliver via Telegram.",
+  "channel": "telegram",
+  "model": "anthropic/claude-sonnet-4",
+  "notes": "Uses a lighter model (Sonnet) to save tokens. Adjust schedule with standard cron syntax: minute hour day month weekday. Examples: '0 8 * * 1-5' for weekdays only, '0 9 * * 0' for Sundays at 9 AM."
+}
